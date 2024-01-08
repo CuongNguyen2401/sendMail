@@ -1,0 +1,32 @@
+#version: '2.x'
+#services:
+#  mongodb:
+#    image: mongo:latest
+#    container_name: sleepy_shamir
+#    ports:
+#      - 27017:27017
+#    volumes:
+#      - data:/data
+#    networks:
+#      - default
+#
+#  mongo-express:
+#    image: mongo-express:latest
+#    container_name: nervous_hellman
+#    environment:
+#      - ME_CONFIG_MONGODB_SERVER=mongodb
+#      - ME_CONFIG_MONGODB_ENABLE_ADMIN=false
+#    ports:
+#      - 8081:8081
+#    networks:
+#      - default
+#    volumes:
+#      - ./config.js:/etc/mongo-express/config.js
+#
+#volumes:
+#  data: {}
+#
+#networks:
+#  default:
+#    name: mongodb_network
+#
